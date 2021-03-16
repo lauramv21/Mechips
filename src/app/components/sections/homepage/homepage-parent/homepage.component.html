@@ -1,0 +1,35 @@
+<app-header [ngClass]="{'hideLogo': hideLogo, 'showLogo': !hideLogo}" class="fixed"
+            [smallHeader]="hideLogo"></app-header>
+<div class="homepage-container" (scroll)="getYPosition($event)">
+  <section class="banner">
+    <img src="../../../../../assets/papas.jpeg" class="banner-img">
+  </section>
+  <section class="categories-section video-section">
+    <h2 class="section-title">¡Somos Exportadores!</h2>
+    <div class="section-info">
+      <iframe class="responsive-iframe"
+              src="https://www.youtube.com/embed/8JvVSIqs5Bk?autoplay=1&fs=1&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=622&end=0">
+      </iframe>
+      <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod enim sed tellus
+        gravida aliquam. Aliquam erat volutpat. Pellentesque eget varius magna. Nulla quis venenatis velit, non luctus
+        quam. Morbi facilisis purus quis ex laoreet, a porta mauris accumsan. Vestibulum ante ipsum primis in faucibus
+        orci luctus et ultrices posuere cubilia curae; Sed lacinia varius magna non commodo.</p>
+    </div>
+  </section>
+  <section class="categories-section">
+    hello
+  </section>
+  <section class="categories-section">
+    hello
+  </section>
+  <section class="categories-section">
+    hello
+  </section>
+  <section class="categories-section">
+    hello
+  </section>
+  <section class="categories-section">
+    hello
+  </section>
+  <app-footer></app-footer>
+</div>
