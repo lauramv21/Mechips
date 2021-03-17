@@ -1,0 +1,89 @@
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  color: #292929;
+  padding: 3rem 5rem;
+  border-top: 1px solid rgba(41, 41, 41, 0.5);
+}
+
+.logo-container {
+  text-align: center;
+  flex-grow: 1;
+  .logo {
+    height: 8rem;
+  }
+}
+
+.company-address {
+  flex-grow: 1;
+}
+
+.address {
+  font-size: 15px;
+  padding: 5px 0;
+}
+
+.company-contact {
+  flex-grow: 1;
+}
+
+.number {
+  font-size: 15px;
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+
+  .contact-icon {
+    margin-right: 1rem;
+    font-size: 20px;
+  }
+}
+
+.follow-us {
+  flex-grow: 1;
+}
+
+.title {
+  position: relative;
+  font-size: 15px;
+  margin-bottom: 2rem;
+}
+
+.title::after {
+  position: absolute;
+  content: "";
+  background: grey;
+  width: 40%;
+  height: 1px;
+  left: 0;
+  bottom: -10px;
+}
+
+.social {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  display: inline-block;
+  border-radius: 50%;
+  border: 1px solid #292929;
+  opacity: 0.75;
+  position: relative;
+
+  &:not(:last-of-type) {
+    margin-right: 2rem;
+  }
+
+  &:hover {
+      opacity:0.9;
+  }
+}
+
+.social-media-icon {
+  color: #292929;
+  font-size: 24px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
