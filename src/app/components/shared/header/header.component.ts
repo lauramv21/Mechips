@@ -6,6 +6,7 @@ import {Component, Input, OnInit} from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
+  expanded = false;
 
   @Input() smallHeader: boolean;
 
@@ -14,4 +15,7 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {
   }
 
+  toggle() {
+    this.expanded = !this.expanded;
+  }
 }

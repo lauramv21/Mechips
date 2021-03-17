@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   height: 100%;
-  //margin-top: 15rem;
+  margin-top: 9rem;
 }
 
 .banner-img {
@@ -15,43 +15,29 @@
   top: 0;
   left: 0;
   transition: margin-top 0.2s;
-
-  &.hideLogo {
-    margin-top: -110px;
-  }
-
-  &.showLogo {
-    margin-top: 0;
-  }
+  z-index: 2;
 }
 
 .video-section {
-
-  padding: 20px;
+  padding: 2rem;
 
   .section-info {
-    display: flex;
-    padding: 20px 30px;
-    align-items: center;
+    padding: 2rem 3rem;
   }
 
-
   .description {
-    flex-basis: 50%;
-    font-size: 20px;
-    margin-left: 2rem;
+    font-size: 2rem;
+    margin-top: 4rem;
   }
 
   .responsive-iframe {
-    flex-basis: 36%;
-
     height: 27rem;
   }
 }
 
 
 .section-title {
-  font-size: 3.6rem;
+  font-size: 2rem;
   text-align: center;
   color: red;
   margin: 2rem 0;
@@ -59,11 +45,66 @@
   &::before,
   &::after {
     content: " ";
-    height: 2px;
-    width: 80px;
-    margin: 10px;
+    height: 0.2rem;
+    width: 4rem;
+    margin: 0.5rem;
     display: inline-block;
     zoom: 1;
     background-color: red;
+  }
+}
+
+@media (min-width: 540px) {
+  .section-title {
+    font-size: 2.8rem;
+
+    &::before,
+    &::after {
+      content: " ";
+      height: 0.2rem;
+      width: 6rem;
+      margin: 1rem;
+      display: inline-block;
+      zoom: 1;
+      background-color: red;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .homepage-container {
+    margin-top: 0;
+  }
+
+  .video-section {
+    .description {
+      margin-top: 0;
+    }
+  }
+
+  .fixed {
+
+    &.hideLogo {
+      margin-top: -12rem;
+    }
+
+    &.showLogo {
+      margin-top: 0;
+    }
+  }
+
+  .section-title {
+    font-size: 3.6rem;
+
+    &::before,
+    &::after {
+      content: " ";
+      height: 0.2rem;
+      width: 8rem;
+      margin: 1rem;
+      display: inline-block;
+      zoom: 1;
+      background-color: red;
+    }
   }
 }
