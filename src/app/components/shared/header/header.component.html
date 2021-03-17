@@ -1,4 +1,4 @@
-<div class="header-container" [ngClass]="{'dark': smallHeader}">
+<div class="full-screen-header-container" [ngClass]="{'dark': smallHeader}">
   <nav class="navbar">
     <a>
       <img src="../../../../assets/mechips-logo.png" class="logo" alt="logo">
@@ -11,10 +11,36 @@
         <li class="menu-item">
           ¿Quiénes somos?
         </li>
-        <li class="menu-item">
+        <li class="menu-item">"
           Productos
         </li>
       </ul>
     </div>
   </nav>
+</div>
+
+<div class="mobile-header-container">
+  <a>
+    <img src="../../../../assets/mechips-logo.png" class="logo" alt="logo">
+  </a>
+  <div id="nav-icon3" class="hamburger-menu" (click)="toggle()" [ngClass]="{'open': expanded}">
+    <span></span>
+    <span></span>""
+    <span></span>
+    <span></span>
+  </div>
+
+  <div class="mobile-menu" [ngClass]="{'visible': expanded}">
+    <ul class="menu">
+      <li class="menu-item">
+        Contacto
+      </li>
+      <li class="menu-item">
+        ¿Quiénes somos?
+      </li>
+      <li class="menu-item">
+        Productos
+      </li>
+    </ul>
+  </div>
 </div>

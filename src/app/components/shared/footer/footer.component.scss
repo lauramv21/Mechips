@@ -1,6 +1,4 @@
 .footer {
-  display: flex;
-  flex-wrap: wrap;
   color: #292929;
   padding: 3rem 5rem;
   border-top: 1px solid rgba(41, 41, 41, 0.5);
@@ -8,44 +6,31 @@
 
 .logo-container {
   text-align: center;
-  flex-grow: 1;
   .logo {
     height: 8rem;
   }
 }
 
-.company-address {
-  flex-grow: 1;
-}
-
 .address {
-  font-size: 15px;
-  padding: 5px 0;
-}
-
-.company-contact {
-  flex-grow: 1;
+  font-size: 1.5rem;
+  padding: 0.5rem 0;
 }
 
 .number {
-  font-size: 15px;
-  padding: 5px 0;
+  font-size: 1.5rem;
+  padding: 0.5rem 0;
   display: flex;
   align-items: center;
 
   .contact-icon {
     margin-right: 1rem;
-    font-size: 20px;
+    font-size: 2rem;
   }
-}
-
-.follow-us {
-  flex-grow: 1;
 }
 
 .title {
   position: relative;
-  font-size: 15px;
+  font-size: 1.5rem;
   margin-bottom: 2rem;
 }
 
@@ -54,15 +39,15 @@
   content: "";
   background: grey;
   width: 40%;
-  height: 1px;
+  height: 0.1rem;
   left: 0;
-  bottom: -10px;
+  bottom: -1rem;
 }
 
 .social {
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
+  width: 4rem;
+  height: 4rem;
+  line-height: 4rem;
   display: inline-block;
   border-radius: 50%;
   border: 1px solid #292929;
@@ -80,10 +65,24 @@
 
 .social-media-icon {
   color: #292929;
-  font-size: 24px;
+  font-size: 2.4rem;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
 
+
+.company-contact,
+.follow-us,
+.company-address {
+  margin-top: 4rem;
+}
+
+@media (min-width: 768px) {
+  .company-contact,
+  .follow-us,
+  .company-address {
+    margin-top: 0;
+  }
 }
