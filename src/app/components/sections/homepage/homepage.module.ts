@@ -1,9 +1,9 @@
 import {NgModule} from '@angular/core';
 
 import {HomepageRoutingModule} from './homepage-routing.module';
-import {HomepageComponent} from "./homepage-parent/homepage-parent.component";
-import {SharedModule} from "../../shared/shared.module";
-import {CommonModule} from "@angular/common";
+import {SharedModule} from '../../shared/shared.module';
+import {CommonModule} from '@angular/common';
+import {HomepageComponent} from './homepage-parent/homepage.component';
 
 @NgModule({
   declarations: [
