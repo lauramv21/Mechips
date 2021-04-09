@@ -1,11 +1,8 @@
-<app-header [ngClass]="{'hideLogo': hideLogo, 'showLogo': !hideLogo}"
-            class="fixed"
-            [smallHeader]="hideLogo"></app-header>
-<div class="homepage-container" (scroll)="getYPosition($event)">
+<div class="homepage-container">
   <section class="banner">
     <img src="../../../../../assets/papas.jpeg" class="banner-img">
   </section>
-  <section class="categories-section video-section">
+  <section class="video-section">
     <h2 class="section-title">¡Somos Exportadores!</h2>
     <div class="section-info row">
       <iframe class="responsive-iframe col col-12 col-md-6"
@@ -17,5 +14,4 @@
         orci luctus et ultrices posuere cubilia curae; Sed lacinia varius magna non commodo.</p>
     </div>
   </section>
-  <app-footer></app-footer>
 </div>

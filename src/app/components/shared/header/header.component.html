@@ -1,17 +1,17 @@
 <div class="full-screen-header-container" [ngClass]="{'dark': smallHeader}">
   <nav class="navbar">
-    <a>
+    <a (click)="goToView('')" class="company-logo">
       <img src="../../../../assets/mechips-logo.png" class="logo" alt="logo">
     </a>
     <div class="menu-container">
       <ul class="menu">
-        <li class="menu-item">
+        <li class="menu-item" (click)="goToView('contacto')">
           Contacto
         </li>
-        <li class="menu-item">
-          ¿Quiénes somos?
+        <li class="menu-item" (click)="goToView('sobre-nosotros')">
+          Sobre Nosotros
         </li>
-        <li class="menu-item">
+        <li class="menu-item" (click)="goToView('productos')">
           Productos
         </li>
       </ul>
@@ -20,7 +20,7 @@
 </div>
 
 <div class="mobile-header-container">
-  <a>
+  <a (click)="goToView('')">
     <img src="../../../../assets/mechips-logo.png" class="logo" alt="logo">
   </a>
   <div id="nav-icon3" class="hamburger-menu" (click)="toggle()" [ngClass]="{'open': expanded}">
@@ -32,13 +32,13 @@
 
   <div class="mobile-menu" [ngClass]="{'visible': expanded}">
     <ul class="menu">
-      <li class="menu-item">
+      <li class="menu-item" (click)="goToView('contacto')">
         Contacto
       </li>
-      <li class="menu-item">
-        ¿Quiénes somos?
+      <li class="menu-item" (click)="goToView('sobre-nosotros')">
+        Sobre Nosotros
       </li>
-      <li class="menu-item">
+      <li class="menu-item" (click)="goToView('productos')">
         Productos
       </li>
     </ul>

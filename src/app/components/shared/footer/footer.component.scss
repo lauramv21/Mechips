@@ -1,7 +1,7 @@
 .footer {
-  color: #292929;
   padding: 3rem 5rem;
-  border-top: 1px solid rgba(41, 41, 41, 0.5);
+  background-color: #2a2a2a;
+  color: #a6a6a6;
 }
 
 .logo-container {
@@ -21,6 +21,7 @@
   padding: 0.5rem 0;
   display: flex;
   align-items: center;
+  color: #a6a6a6;
 
   .contact-icon {
     margin-right: 1rem;
@@ -50,7 +51,7 @@
   line-height: 4rem;
   display: inline-block;
   border-radius: 50%;
-  border: 1px solid #292929;
+  border: 1px solid #a6a6a6;
   opacity: 0.75;
   position: relative;
 
@@ -64,7 +65,7 @@
 }
 
 .social-media-icon {
-  color: #292929;
+  color: #a6a6a6;
   font-size: 2.4rem;
   position: absolute;
   top: 50%;
