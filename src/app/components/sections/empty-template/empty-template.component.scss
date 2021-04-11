@@ -1,0 +1,43 @@
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: margin-top 0.2s;
+  z-index: 2;
+}
+
+.content {
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+@media (min-width: 540px) {
+  .section-title {
+    font-size: 2.8rem;
+
+    &::before,
+    &::after {
+      content: " ";
+      height: 0.2rem;
+      width: 6rem;
+      margin: 1rem;
+      display: inline-block;
+      zoom: 1;
+      background-color: red;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .fixed {
+
+    &.hideLogo {
+      margin-top: -12rem;
+    }
+
+    &.showLogo {
+      margin-top: 0;
+    }
+  }
+}

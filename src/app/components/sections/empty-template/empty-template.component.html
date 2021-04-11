@@ -1,0 +1,8 @@
+<app-header [ngClass]="{'hideLogo': hideLogo, 'showLogo': !hideLogo}"
+            class="fixed"
+            [smallHeader]="hideLogo"></app-header>
+<!--            [smallHeader]="hideLogo || !router.url.includes('inicio')"></app-header>-->
+<div class="content" (scroll)="getYPosition($event)">
+  <router-outlet></router-outlet>
+  <app-footer></app-footer>
+</div>

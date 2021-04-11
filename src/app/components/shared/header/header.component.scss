@@ -3,7 +3,7 @@
 }
 
 .mobile-header-container {
-  background-color: #292929;
+  background-color: #2a2a2a;
   display: flex;
   justify-content: space-between;
   padding: 2rem;
@@ -23,7 +23,6 @@
     width: 100%;
 
     .menu {
-      list-style: none;
       color:  #ccc;
       display: flex;
       flex-direction: column;
@@ -53,7 +52,11 @@
   transition: background-color 0.1s;
 
   &.dark {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: #2a2a2a;
+  }
+
+  .company-logo {
+    cursor: pointer;
   }
 
   .menu-container {
@@ -61,7 +64,6 @@
   }
 
   .menu {
-    list-style: none;
     display: flex;
     color: white;
     justify-content: space-evenly;

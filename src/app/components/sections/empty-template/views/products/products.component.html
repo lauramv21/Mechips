@@ -1,0 +1,60 @@
+<div class="products-container">
+  <section class="banner">
+    <img src="../../../../../../assets/productos.png" class="banner-img">
+    <h1 class="title">Productos</h1>
+  </section>
+  <section class="products-section">
+    <h3 class="section-title">Tarros</h3>
+    <div class="carousel slide">
+      <ol class="carousel-indicators">
+        <li
+          *ngFor="let image of canArray; index as canIndex"
+          [ngClass]="{active: activeCan === canIndex}"
+          (click)="setActiveCan(canIndex)">
+        </li>
+      </ol>
+      <div class="carousel-inner">
+        <div
+          *ngFor="let image of canArray; index as canIndex" class="carousel-item"
+          [ngClass]="{active: activeCan === canIndex}">
+          <img class="d-block w-100" [src]="image.src" [alt]="image.alt">
+        </div>
+      </div>
+      <a class="carousel-control-prev" role="button" (click)="setActiveCan(activeCan - 1)">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" role="button" (click)="setActiveCan(activeCan + 1)">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </section>
+  <section class="products-section">
+    <h3 class="section-title">Personales</h3>
+    <div class="carousel slide">
+      <ol class="carousel-indicators">
+        <li
+          *ngFor="let image of individualsArray; index as indIndex"
+          [ngClass]="{active: activeIndividual === indIndex}"
+          (click)="setActiveIndividual(indIndex)">
+        </li>
+      </ol>
+      <div class="carousel-inner">
+        <div
+          *ngFor="let image of individualsArray; index as indIndex" class="carousel-item"
+          [ngClass]="{active: activeIndividual === indIndex}">
+          <img class="d-block w-100" [src]="image.src" [alt]="image.alt">
+        </div>
+      </div>
+      <a class="carousel-control-prev" role="button" (click)="setActiveIndividual(activeIndividual - 1)">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" role="button" (click)="setActiveIndividual(activeIndividual + 1)">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </section>
+</div>
