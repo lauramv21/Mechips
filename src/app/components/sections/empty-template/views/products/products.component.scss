@@ -1,5 +1,96 @@
 .products-container {
-  margin-top: 20rem;
+  padding-bottom: 3rem;
 }
 
+.section-title {
+  font-size: 2rem;
+  text-align: center;
+  color: red;
+  margin: 2rem 0;
 
+  &::before,
+  &::after {
+    content: " ";
+    height: 0.2rem;
+    width: 4rem;
+    margin: 0.5rem;
+    display: inline-block;
+    zoom: 1;
+    background-color: red;
+  }
+}
+
+.banner {
+  position: relative;
+  .title {
+    position: absolute;
+    color: white;
+    font-size: 4rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.banner-img {
+  height: 100vh;
+}
+
+@media (min-width: 540px) {
+
+  .section-title {
+    font-size: 2.8rem;
+
+    &::before,
+    &::after {
+      content: " ";
+      height: 0.2rem;
+      width: 6rem;
+      margin: 1rem;
+      display: inline-block;
+      zoom: 1;
+      background-color: red;
+    }
+  }
+
+  .products-section {
+    padding: 3rem 0 5rem 0;
+  }
+}
+
+@media (min-width: 768px) {
+
+  .section-title {
+    font-size: 3.6rem;
+
+    &::before,
+    &::after {
+      content: " ";
+      height: 0.2rem;
+      width: 8rem;
+      margin: 1rem;
+      display: inline-block;
+      zoom: 1;
+      background-color: red;
+    }
+  }
+
+  .carousel {
+    margin: 0 auto;
+    width: 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  .banner {
+    .title {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .banner-img {
+    width: 100vw;
+  }
+}
